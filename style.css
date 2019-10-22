@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Style */
+body{
+	font:16px arial, sans-serif;
+	background-image: url(img/396540.jpg);
+	background-repeat: repeat;
+	color:#333;
+}
+
+
+.top-bar {
+	height: 90px;
+	width: 900px;
+	background-color: black;
+	position: fixed;
+	padding: 3px solid black;
+	opacity: 0.9;
+}
+
+.top-bar p {
+	text-align: right;
+	padding: 10px;
+	
+}
+
+.container {
+	width: 900px;
+	margin:auto;
+	background-color: grey;
+	position: relative;
+}
+
+
+.header .judul {
+	font-size: 35px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-left: 6px;
+}
+
+.header ul li {
+	display: inline-block;
+	margin: 15px 15px 0 5px;
+	width: 60px;
+}
+
+.header a {
+	text-decoration: none;
+	color: whitesmoke;
+	padding: 8px;
+}
+
+.header a:hover {
+	background-color: white;
+	color:black;
+	border-radius: 6px;
+}
+
+.hero {
+	height: 320px;
+	background-image: url(img/head.jpg);
+	background-size: cover;
+	background-position: 0 0;
+}
+
+.main {
+	width: 600px;
+	padding: 10px;
+	box-sizing: border-box;
+	padding: 20px;
+	float:left;
+}
+
+.main a{
+	text-decoration: none;
+}
+.top-bar h1 span{
+	font-size: 20pt;
+	color: peru;
+	font-weight: bold;
+	margin:10px 0 0 10px;
+	display: inline-block;
+	opacity: 0;
+	animation: animate 2s linear forwards;
+}
+
+@keyframes animate{
+	0%
+	{
+		opacity: 0;
+		transform: rotateY(90deg);
+		filter:blur(10px);
+	}
+
+	100%
+	{
+		opacity: 1;
+		transform: rotateY(0deg);
+		filter:blur(0);
+	}
+
+}
+.main h1{
+	font-size: 20pt;
+	color: #333333;
+	font-weight: bold;
+	
+	
+}
+.penulis {
+	color: black;
+	font-size: 10px;
+}
+
+.main p {
+	font:12/18px   arial, sans-serif;
+	margin-bottom: 10px;
+	text-align: justify;
+	
+	letter-spacing: 1px;
+}
+
+.sidebar {
+	width: 200px;
+	padding: 30px;
+	float: left;
+}
+
+.sidebar img {
+	width: 80px;
+	height: 100px;
+	float: left;
+	padding-right: 10px;
+}
+.sidebar p{
+	font:12px/17px black arial;
+	text-align: justify;
+}
+
+.footer {
+	height: 30px;
+	background-color: black;
+	padding: 10px;
+	
+	}
+.footer p {
+	color:white;
+	font-size: 11px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.footer a {
+	text-decoration: none;
+	color: aliceblue;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
